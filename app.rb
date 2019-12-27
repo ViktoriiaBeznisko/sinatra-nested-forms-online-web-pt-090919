@@ -11,8 +11,7 @@ require './environment'
   end
  
     @ships = Course.all
- 
-    erb :student
+       erb :student
     end
   end
 end
