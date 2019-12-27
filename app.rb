@@ -6,13 +6,13 @@ require './environment'
   post '/pirate' do
   @pirat = Pirate.new(params[:pirate])
  
-  params[:pirate][:ship].each do |details|
+    params[:pirate][:ship].each do |details|
     Ship.new(details)
   end
  
-  @ships = Course.all
+    @ships = Course.all
  
-  erb :student
+    erb :student
     end
   end
 end
