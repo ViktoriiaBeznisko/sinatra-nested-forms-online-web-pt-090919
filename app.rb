@@ -4,13 +4,13 @@ require './environment'
   class App < Sinatra::Base
 
   post '/pirate' do
-  @pirate = Pirate.new(params[:student])
+  @pirats = Pirate.new(params[:pirate])
  
-  params[:student][:courses].each do |details|
-    Course.new(details)
+  params[:pirate][:ship].each do |details|
+    Ship.new(details)
   end
  
-  @courses = Course.all
+  @ships = Course.all
  
   erb :student
 
