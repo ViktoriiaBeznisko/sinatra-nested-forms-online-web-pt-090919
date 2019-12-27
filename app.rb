@@ -1,9 +1,18 @@
 require './environment'
 
-module FormsLab
+  module FormsLab
   class App < Sinatra::Base
 
-    # code other routes/actions here
+  post '/student' do
+  @student = Student.new(params[:student])
+ 
+  params[:student][:courses].each do |details|
+    Course.new(details)
+  end
+ 
+  @courses = Course.all
+ 
+  erb :student
 
   end
 end
