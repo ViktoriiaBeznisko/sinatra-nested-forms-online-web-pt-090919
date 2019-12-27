@@ -8,7 +8,7 @@ class Ship
     @name = params[:name]
     @type = params[:type]
     @booty = params[:booty]
-    @@all << self
+    SHIPS << self
   end
   
   def self.all
