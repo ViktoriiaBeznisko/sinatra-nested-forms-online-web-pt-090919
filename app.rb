@@ -4,7 +4,7 @@ require './environment'
   class App < Sinatra::Base
 
   post '/pirate' do
-  @pirate = Student.new(params[:student])
+  @pirate = Pirate.new(params[:student])
  
   params[:student][:courses].each do |details|
     Course.new(details)
