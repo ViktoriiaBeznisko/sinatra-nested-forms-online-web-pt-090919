@@ -12,14 +12,14 @@ require './environment'
   end
 
   post '/pirates' do
-  @pirate = Pirate.new(params[:pirate])
- 
-    params[:pirate][:ship].each do |details|
-    Ship.new(details)
-  end
- 
-    @ships = Course.all
-       erb :student
+    @pirate = Pirate.new(params[:pirate])
+
+    params[:pirate][:ships].each do |details|
+      Ship.new(details)
+    end
+      @ships = Ship.all
+
+      erb :'pirates/show'
     end
   end
 end
@@ -27,14 +27,3 @@ end
 
 
 
-  post '/pirates' do
-  @pirate = Pirate.new(params[:pirate])
-
-    params[:pirate][:ships].each do |details|
-    Ship.new(details)
-  end
-
-    @ships = Ship.all
-
-    erb :'pirates/show'
-    end
