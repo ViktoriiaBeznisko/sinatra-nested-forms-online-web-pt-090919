@@ -4,6 +4,7 @@ gem 'sinatra', require: 'sinatra/base'
 gem 'sinatra-reloader', require: false
 gem 'activerecord', :requere => 'active_record'
 gem 'sinatra-activerecord', :requere => 'sinatra/activerecord'
+gem 'rake'
 gem 'shotgun'
 gem 'pry'
 gem 'tux'
