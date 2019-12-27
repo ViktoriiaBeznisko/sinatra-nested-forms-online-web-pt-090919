@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 gem 'sinatra', require: 'sinatra/base'
 gem 'sinatra-reloader', require: false
-gem 'activerecord', :requere => 
+gem 'activerecord', :requere => 'active_record'
 gem 'shotgun'
 gem 'pry'
 gem 'tux'
