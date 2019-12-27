@@ -13,6 +13,6 @@ require './environment'
   @ships = Course.all
  
   erb :student
-end
+    end
   end
 end
