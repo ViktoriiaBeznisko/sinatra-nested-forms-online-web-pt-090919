@@ -4,7 +4,7 @@ require './environment'
   class App < Sinatra::Base
     
   get '/' do
-    erb :new
+    erb :root
   end
 
   post '/show' do
